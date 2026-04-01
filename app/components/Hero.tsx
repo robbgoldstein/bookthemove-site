@@ -2,21 +2,21 @@ const CALENDLY_URL = "https://calendly.com/bookthemove/bookthemove";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-slate-50 to-white">
+    <section className="pt-32 pb-24 px-6 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-block mb-6 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
           <span className="text-sm font-medium text-blue-700">
             One mover per county
           </span>
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-          We Email Home Sellers For You.{" "}
-          <span className="text-blue-600">They Reply, You Book The Move.</span>
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+          We Email Home Sellers.{" "}
+          <span className="text-blue-600">You Book The Move.</span>
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          We find people listing their homes in your territory, verify their
-          contact info, and send personalized emails on your behalf. You get the
-          replies — and book the job.
+        <p className="mt-6 text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          Every day we find homeowners listing in your area, verify their contact
+          info, and send personalized emails on your behalf. When they reply,
+          you close the job.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -35,7 +35,7 @@ export default function Hero() {
           </a>
         </div>
         <p className="mt-6 text-sm text-slate-400">
-          No contracts. Cancel anytime. Setup in 24 hours.
+          No contracts. Cancel anytime. Live in 24 hours.
         </p>
       </div>
     </section>

@@ -9,8 +9,8 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="Book the Move"
-          width={160}
-          height={35}
+          width={130}
+          height={28}
           priority
         />
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">

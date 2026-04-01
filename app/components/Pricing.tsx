@@ -5,7 +5,7 @@ const tiers = [
     name: "Growth",
     price: 397,
     emailsPerDay: 25,
-    description: "For growing companies expanding their reach",
+    description: "Great for movers building a steady pipeline",
     features: [
       "25 emails/day to home sellers",
       "Up to 3 exclusive counties",
@@ -15,62 +15,67 @@ const tiers = [
       "Weekly performance report",
     ],
     highlight: false,
+    cta: "Get Started",
   },
   {
     name: "Pro",
     price: 697,
     emailsPerDay: 50,
-    description: "For established movers with multi-county coverage",
+    description: "For movers ready to dominate their market",
     features: [
       "50 emails/day to home sellers",
-      "Everything in Growth",
+      "Up to 3 exclusive counties",
+      "Everything in Growth, plus:",
       "A/B tested email sequences",
       "Realtor outreach campaigns",
+      "Priority support",
     ],
     highlight: true,
+    cta: "Get Started",
   },
   {
     name: "Scale",
     price: 1197,
     emailsPerDay: 100,
-    description: "For large operations dominating their region",
+    description: "For operations covering an entire region",
     features: [
       "100 emails/day to home sellers",
       "Unlimited exclusive counties",
-      "Everything in Pro",
+      "Everything in Pro, plus:",
       "Custom email sequences",
       "Dedicated account manager",
+      "Monthly strategy call",
     ],
     highlight: false,
+    cta: "Get Started",
   },
 ];
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section id="pricing" className="py-24 px-6 bg-white">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-            Simple, Transparent Pricing
+            Simple, Predictable Pricing
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
-            No per-lead fees. No setup costs. Just a flat monthly rate based on
-            how many home sellers you want to reach.
+            Flat monthly rate. No per-lead fees. No setup costs.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`rounded-2xl p-6 flex flex-col ${
+              className={`rounded-2xl p-8 flex flex-col ${
                 tier.highlight
-                  ? "bg-blue-600 text-white ring-2 ring-blue-600 shadow-xl shadow-blue-600/20 relative"
+                  ? "bg-blue-600 text-white ring-2 ring-blue-600 shadow-xl shadow-blue-600/20 relative scale-[1.02]"
                   : "bg-white border border-slate-200"
               }`}
             >
               {tier.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
-                  MOST POPULAR
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide">
+                  Most Popular
                 </div>
               )}
               <div className="mb-6">
@@ -106,9 +111,9 @@ export default function Pricing() {
                 </span>
               </div>
               <div
-                className={`text-sm font-medium mb-4 px-3 py-1.5 rounded-lg inline-block w-fit ${
+                className={`text-sm font-medium mb-6 px-3 py-1.5 rounded-lg inline-block w-fit ${
                   tier.highlight
-                    ? "bg-blue-500 text-blue-100"
+                    ? "bg-blue-500/50 text-blue-100"
                     : "bg-slate-100 text-slate-600"
                 }`}
               >
@@ -116,14 +121,14 @@ export default function Pricing() {
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {tier.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
+                  <li key={feature} className="flex items-start gap-2.5 text-sm">
                     <svg
                       className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         tier.highlight ? "text-blue-200" : "text-blue-600"
                       }`}
                       fill="none"
                       viewBox="0 0 24 24"
-                      strokeWidth={2}
+                      strokeWidth={2.5}
                       stroke="currentColor"
                     >
                       <path
@@ -146,18 +151,18 @@ export default function Pricing() {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`block w-full text-center font-semibold py-3 rounded-lg transition-colors ${
+                className={`block w-full text-center font-semibold py-3.5 rounded-lg transition-colors ${
                   tier.highlight
                     ? "bg-white text-blue-600 hover:bg-blue-50"
                     : "bg-blue-600 text-white hover:bg-blue-700"
                 }`}
               >
-                Get Started
+                {tier.cta}
               </a>
             </div>
           ))}
         </div>
-        <p className="text-center mt-8 text-sm text-slate-400">
+        <p className="text-center mt-10 text-sm text-slate-400">
           No contracts. No setup fees. Cancel anytime.
         </p>
       </div>
