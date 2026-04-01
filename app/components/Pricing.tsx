@@ -9,11 +9,12 @@ const tiers = [
     features: [
       "25 emails/day to home sellers",
       "Up to 3 exclusive counties",
-      "Everything in Starter",
-      "Priority campaign optimization",
+      "Verified homeowner contacts",
+      "Personalized email campaigns",
+      "Reply notifications to your inbox",
       "Weekly performance report",
     ],
-    highlight: true,
+    highlight: false,
   },
   {
     name: "Pro",
@@ -22,12 +23,11 @@ const tiers = [
     description: "For established movers with multi-county coverage",
     features: [
       "50 emails/day to home sellers",
-      "Up to 6 exclusive counties",
       "Everything in Growth",
       "A/B tested email sequences",
       "Realtor outreach campaigns",
     ],
-    highlight: false,
+    highlight: true,
   },
   {
     name: "Scale",
