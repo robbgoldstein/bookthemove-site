@@ -2,21 +2,6 @@ const CALENDLY_URL = "https://calendly.com/bookthemove";
 
 const tiers = [
   {
-    name: "Starter",
-    price: 197,
-    emailsPerDay: 10,
-    description: "For small movers covering one local market",
-    features: [
-      "10 emails/day to home sellers",
-      "1 exclusive county",
-      "Verified homeowner contacts",
-      "Personalized email campaigns",
-      "Reply notifications to your inbox",
-      "Dedicated sending inbox",
-    ],
-    highlight: false,
-  },
-  {
     name: "Growth",
     price: 397,
     emailsPerDay: 25,
@@ -73,7 +58,7 @@ export default function Pricing() {
             how many home sellers you want to reach.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {tiers.map((tier) => (
             <div
               key={tier.name}

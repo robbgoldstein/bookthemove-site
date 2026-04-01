@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-block mb-6 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
           <span className="text-sm font-medium text-blue-700">
-            One mover per county — first come, first served
+            One mover per county
           </span>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
