@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-end gap-2 text-sm text-slate-400">
             <a
-              href="https://calendly.com/bookthemove"
+              href="https://calendly.com/bookthemove/bookthemove"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"

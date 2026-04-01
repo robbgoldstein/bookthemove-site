@@ -1,4 +1,4 @@
-const CALENDLY_URL = "https://calendly.com/bookthemove";
+const CALENDLY_URL = "https://calendly.com/bookthemove/bookthemove";
 
 export default function Hero() {
   return (
